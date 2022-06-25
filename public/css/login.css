@@ -1,0 +1,291 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #e2e2e2;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 128, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 1s;
+}
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("/img/background.gif");
+}
+
+main {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form {
+    position: relative;
+    flex: 0 0 50%;
+    top: 15vh;
+    text-align: left;
+}
+
+.login-form {
+    flex: 0 0 40%;
+    text-align: center;
+    border-radius: 35px;
+    /* From https://css.glass */
+    background: #202231;
+    /* From https://css.glass */
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(84, 78, 78, 0.3);
+}
+
+
+.col-logo {
+    position: relative;
+    top: 6vh;
+    padding: 0px;
+}
+
+.row h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f0363a;
+}
+
+.row h2 {
+    color: #bdbdbd;
+
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.login-form .form-container {
+    z-index: 0;
+    border: none;
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.login-form .form-container input,
+.login-form .form-container .btn-login {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.login-form .form-container input {
+    background-color: #5f5f5f;
+    color: #ffffff;
+    border-radius: 9px;
+    padding: 0 0 0 20px;
+    height: 48px;
+    width: 320px;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+
+}
+
+.registration-form input {
+    background-color: #5f5f5f;
+    color: #ffffff;
+    border-radius: 9px;
+    padding: 0 0 0 20px;
+    display: inline;
+    height: 48px;
+    width: 320px;
+    margin: 1vh;
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+}
+
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    /* Firefox */
+}
+
+.login-form .form-container input:focus {
+    border-color: #01ee11;
+    outline: none;
+}
+
+.login-form .form-container .btn-login {
+    margin-top: 2vh;
+    border: none;
+    border-radius: 9px;
+    height: 48px;
+    width: 320px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgb(42, 42, 42);
+    background-color: #eae9ec;
+    transition: .8s ease-in-ease-out;
+}
+
+.login-form .form-container .btn-login:hover {
+    background-color: #cbcbcb;
+    transition: ease-in-out;
+    cursor: pointer;
+}
+
+.login-form .form-container a {
+    display: block;
+    color: #f0363a;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.login-form .form-container a:hover {
+    text-decoration: underline;
+}
+
+.login-form .btn-new {
+    position: relative;
+    background-color: #f0363a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: -10vh;
+    margin-bottom: 2vh;
+    transition: .2s ease-in-out;
+}
+
+.login-form .btn-new:hover {
+    background-color: #f72e31;
+    cursor: pointer;
+}
+
+
+.login-form p a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+.login-form p a:hover {
+    text-decoration: underline;
+}
+
+
+.registration-form {
+    position: absolute;
+    z-index: 2;
+    background-color: #01ee11;
+
+    border: none;
+    margin-bottom: 30px;
+    padding: 20px 0px 20px 0px;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 35px;
+    background: #202231;
+    border-radius: 16px;
+    transition: .9s ease-in-out;
+    top: 100vh;
+    opacity: 0;
+
+}
+.registration-form h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f0363a;
+
+    line-height: 32px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+.registration-form a{
+    position: relative;
+    top:0vh;
+    padding: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f0363a;
+    transition: .8s;
+
+    line-height: 32px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+} 
+.registration-form a:hover{
+    transition: .8s ease-in-out;
+    top: -1.3vh;
+    
+    text-shadow: -2px 4px 14px rgba(0,0,0,0.26);
+}
+.submit-btn {
+    margin-top: 2vh;
+    border: none;
+    border-radius: 9px;
+    height: 48px;
+    width: 320px;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #f0363a;
+    background-color: #eae9ec;
+    cursor: pointer;
+    transition: .2s linear;
+} 
+.submit-btn:hover{
+    background-color: #f0363a;
+    color: #ffffff;
+    transition: .1s linear;
+}
